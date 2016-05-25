@@ -1,0 +1,1 @@
+<?php echo json_encode(array( "author" => "Umea room temparature","tweet" => "<br>Curren temp: 26.375 &deg;C <br>Average temp:26.3998&deg;C<br>Sys time: 2014-07-30 22:06:22","date" => date("l jS \of F Y h:i:s A"))); ?>
