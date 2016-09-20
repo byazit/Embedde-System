@@ -96,7 +96,8 @@ fi
 #download mac.py which will run every hour to keep track of pi is alive
 curl -sS $SERVER > mac.zip && \
 unzip mac.zip              && \
-rm mac.zip
+rm -rf mac.zip
+mv mac.py $DIR
 crontab -l > mycron
 #corntab setup
 echo "0 * * * * sudo python /usr/local/xTron/mac.py" >> mycron
