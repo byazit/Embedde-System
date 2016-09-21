@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 #last update April 2016
 # Init
 FILE="/tmp/out.$$"
@@ -42,7 +42,7 @@ if [ $ip -eq 1 ]
 fi
 
 #update and upgrade
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y && apt-get autoremove -y
 
 #no more perl error!
 perlLang="/etc/ssh/ssh"
